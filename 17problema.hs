@@ -56,5 +56,4 @@ extenso num
 
 solucao1 = sum $ map (length . escreveDecimal) [1,2,3,4,5]
 
-solucao2 = map (filter (\x -> elem x ['a'..'z']) . extenso) [1..1000]
 solucao =   sum $ map (length . (filter (\x -> elem x ['a'..'z'])) . extenso) [1..1000]
